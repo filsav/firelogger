@@ -491,7 +491,7 @@ FBL.ns(function() {
                 var browser = panel.context.browser;
                 if (!browser) return;
                 for (var s in states) {
-                    var button = browser.chrome.$("fbFireLoggerFilter"+capitalize(s)+"Button");
+                    var button = Firebug.chrome.$("fbFireLoggerFilter"+capitalize(s)+"Button");
                     button.checked = !states[s];
                 }
             },
